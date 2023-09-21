@@ -3,6 +3,10 @@ using EcoPower_Logistics.Repository;
 using Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore;
+//using Microsoft.AspNetCore.Hosting;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +24,9 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped(typeof(ICustomersRepository<>), typeof(CustomersRepository<>));
 builder.Services.AddScoped(typeof(IOdersRepository<>), typeof(OrdersRepository<>));
 builder.Services.AddScoped(typeof(IProductsRepository<>), typeof(ProductsRepository<>));
+
+
+
 
 var app = builder.Build();
 
@@ -44,3 +51,19 @@ app.MapControllerRoute(
 app.MapRazorPages();
 
 app.Run();
+
+
+//namespace YourNamespace
+//{
+//    public static class Program
+//    {
+//        public static void Main(string[] args)
+//        {
+//            CreateWebHostBuilder(args).Build().Run();
+//        }
+
+//        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+//            WebHost.CreateDefaultBuilder(args)
+//                .UseStartup<Program>();
+//    }
+//}
