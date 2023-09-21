@@ -2,6 +2,7 @@
 
 URL AZURE: https://ecopowerlogistics20230921154905.azurewebsites.net/
 GIT URL: https://github.com/Zaine97/Project3_SuperStore-P3/tree/masterz
+Git REPO URL: https://github.com/Zaine97/Project3_SuperStore-P3
 
 Using the Web Application
 Accessing the App:
